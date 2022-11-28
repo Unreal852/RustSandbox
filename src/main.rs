@@ -10,7 +10,7 @@ fn main()
 
     ask_input(&mut user, String::from("Enter your username: "));
 
-    let user = User{uuid: Uuid::new_v4(), username: user};
+    let user = User::new(Uuid::new_v4(), user); //User{uuid: Uuid::new_v4(), username: user};
 
     println!("Welcome {}", user);
 

@@ -11,7 +11,7 @@ impl User
 {
     pub fn new(uuid: Uuid, username: String) -> User
     {
-        User{uuid: uuid, username: username}
+        User{uuid, username}
     }
 }
 
